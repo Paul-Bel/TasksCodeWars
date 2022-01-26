@@ -4,3 +4,11 @@
 const sumOfMinimums = (arr) =>
     arr.map(m=> Math.min(...m))
         .reduce((a, el)=> a+el)
+//Write a function that doubles every second integer in a list, starting from the left.
+ let y =   [1,2,3,4]
+const doubleEveryOther = (a) => {
+    return  a.reduce((acc, el, i) => {
+        return i % 2 === 0 ? acc = [...acc, el] : acc = [...acc, el*2]
+    }, []);
+}
+//
